@@ -1,0 +1,203 @@
+<html>
+    <head>
+    </head>
+    <body text="white">
+        <h1><b><u>BOOK YOUR TICKETS</u></b></h1>
+        
+
+
+
+   
+      
+       <form action="print.html"method="POST">
+        <table cellspacing="3" cellpadding="2">
+            <tr>
+            <td>
+<label for="title">Title</label>
+            </td>
+            <td>
+                <select id="title" name="title" multiple>
+                    <option value="1"selected> Mr.</option>
+                    <option value="2">Mrs.</option>
+<option value="3" >Ms.</option>
+</label>select
+            
+
+
+<tr>
+    <td>
+        <label for="firstName">First Name:</label>
+    </td>
+    <td>
+        <input type="text" id="FirstName" placeholder="First Name">             
+       </td>
+    </tr>
+                <tr>
+                <td>
+                    <label for="lastName">Last Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="lastName" placeholder="Your Last Name">             
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="destination">Destination:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="destination" placeholder="Your destination">             
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="passengers">Number of passengers:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="number of passengers" placeholder="number of passengers">             
+                           </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="cab preference">Cab Preference:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="Cab Preference" placeholder="Cab Preference">             
+                               </td>
+                            </tr>
+                <tr>
+                   <td>
+                    <label for="address">Address:</label>
+                   </td>
+                   <td>
+                    <textarea id="address" name="address"
+                    placeholder="Your Address" rows="6" cols="20"></textarea>
+                   </td>
+                </tr>
+                <tr>
+                   <td>
+                    <label for="dob">Date of Birth:</label>
+                   </td>
+                   <td>
+                   <input type="date" id="dob" placeholder="Your date of birth">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+
+                    </td>
+                    
+                    <td>
+                        <input type="radio" id="male" name="gender" value="1" />male  
+                        <input type="radio" id="female" name="gender" value="2" />female
+                    </td>
+                </tr>
+                <tr><td>
+                    <label for="photo"></label>
+                    
+                </td>
+            <td>
+                <input type="file"id="photofile"name="photofile"accept="image/*,*jpg"/>
+            </td>
+            </tr>
+                
+<tr>
+    <td>
+        <label for="mobilenumber">Mobile Number:</label>
+    </td>
+    <td>
+        <input type="text" id="mobilenumber" placeholder="Your mobile number">             
+       </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="emailid">Email ID:</label>
+        </td>
+        <td>
+            <input type="text" id="emailid" placeholder="Your email id">             
+           </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="username">User Name:</label>
+            </td>
+            <td>
+                <input type="text" id="username" placeholder="Your username">             
+               </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password:</label>
+                </td>
+                <td>
+                    <input type="text" id="password" placeholder="Your password">             
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="can we contact you?">can we contact you:</label>
+
+                    </td>
+                    
+                    <td>
+                        <input type="radio" id="yes" name="can we contact you?" value="1" />yes 
+                        <input type="radio" id="no" name="can we contact you?" value="2" />no
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="communication preference?">communication preferences:</label>
+
+                    </td>
+                    
+                    <td>
+                        <input type="radio" id="email" name="communication preferences" value="1" />email 
+                        <input type="radio" id="SMS" name="communication preferences" value="2" />SMS
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="yes" name="can we contact you?" value="1" />I agree to the <a href= "agreement.html">terms and conditions</a>of the website 
+
+                    </td>       
+                </tr>
+                <tr> <td>
+                    <input type="submit" onclick="javascript:saveData();"id=submit>
+   
+                       
+                        
+</td>
+
+<td><input type="reset" onclick="javascript:saveData();"id=reset>
+</td>
+</tr>
+               
+                   </table>
+
+<script>
+    function saveData(){
+        var firstname=document.getElementById('firstname').value;
+        var lastname=document.getElementById('lastname').value;
+        var address=document.getElementById('address').value;
+
+        localStorage.setItem('firstname',firstname);
+        localStorage.setItem('lastname',lastname);
+        localStorage.setItem('address',address); 
+    }
+</script>
+
+
+
+<a href= "login.html";background-color> "Home page"</a>
+        
+    </body>
+    <style>
+        body{
+            background-image: url(https://s3.amazonaws.com/cdn.hrewheels.com/img/slideshow-mobile/16573193824994c41e38d9f283887f5149bdd563b6.jpg);
+            background-size: 90%,90%;
+            background-repeat: none;
+        }
+    </style>
+
+</html>
